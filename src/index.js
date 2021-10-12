@@ -1,17 +1,50 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const Trello = ({trello}) => (
+    <table className="trello-list">
+      <tbody>
+        {trello.map(file =>
+          <tr className="trello-list-item" key={file.id}>
+            <td className="trello-name">{file.name}</td>
+          </tr>
+          )}
+      </tbody>
+    </table>
+  
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+const cardFiles = [
+  {
+    id:1,
+    name:'Subwoofer'
+  },
+  {
+    id:2,
+    name:'Non-porous, Washable'
+  },
+  {
+    id:3,
+    name:'Wings'
+  },
+  {
+    id:4,
+    name:'Beveled Bezel'
+  },
+  {
+    id:5,
+    name:'Bezeled Bevel'
+  },
+  {
+    id:6,
+    name:'Seedless'
+  },
+
+]
+
+// const Title = ({title}) =>{
+
+// }
+ReactDOM.render(<Trello  trello={cardFiles}/>, document.getElementById('root'))

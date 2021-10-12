@@ -1,0 +1,92 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+.postcard{
+    border:1px solid #ccc;
+    width: 500px;
+    min-height: 268px;
+    padding:10px;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .top{
+    display: flex;
+    justify-content:space-between
+  }
+  .reciever-details{
+    text-align:center;
+    margin-top:20px;
+  }
+  .address{
+    width: 75%;
+  }
+  .Avatar{
+    width:18px;
+    height:18px;
+    border-radius:5px;
+    margin-right: 10px;
+  }
+  
+  .mastercard{
+    border:1px solid #ccc;
+    border-radius: 10px;
+    width: 450px;
+    min-height: 268px;
+    padding:10px;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: blue;
+    color: white;
+  }
+  .ownersbank{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom:70px;
+  }
+  .owner{
+    padding-left: 10px;
+  }
+  p{
+    font-size: 20px;
+    text-align: center;
+  }  
+  
+  .postercard{
+    border:3px solid blue;
+    border-radius: 10px;
+    width: 500px;
+    min-height: 268px;
+    padding:10px;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: black;
+    color: white;
+  }
+  .image{
+    border:1px solid blue;
+    border-radius: 10px;
+    width: 250px;
+    margin: 3px auto;
+    min-height: 168px;
+    display: flex;
+    justify-content: center;align-items: center;
+  }
+  .heading{
+    text-align: center;
+    color: blue;
+    font-size:45px;
+  }
