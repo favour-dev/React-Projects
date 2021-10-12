@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from "react-dom";
+import './index.css';
 
 const Trello = ({trello}) => (
     <table className="trello-list">
       <tbody>
+        <Title title='Phone Features'/>
         {trello.map(file =>
           <tr className="trello-list-item" key={file.id}>
             <td className="trello-name">{file.name}</td>
           </tr>
           )}
+          <AddCard add='Add Card...'/>
       </tbody>
     </table>
   
@@ -44,7 +47,12 @@ const cardFiles = [
 
 ]
 
-// const Title = ({title}) =>{
+const Title = ({title}) =>(
 
-// }
+  <h3>{title}</h3>  
+
+)
+const AddCard = ({add}) =>(
+  <button>{add}</button>  
+)
 ReactDOM.render(<Trello  trello={cardFiles}/>, document.getElementById('root'))
