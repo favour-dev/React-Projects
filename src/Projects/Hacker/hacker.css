@@ -1,0 +1,40 @@
+.hacker{
+    background-color: rgb(228, 225, 225);
+    width: 70%;
+    padding: 0 0 10px 0;
+}
+.header{
+    background-color:#FF6600;
+    width: 100%;
+}
+.file-name{
+    padding-left: 25px;
+}
+.flag{
+   color:rgb(123, 123, 121);
+   padding: 5px;
+}
+.file-list-item{
+    padding: 10px 0;
+} 
+.flag-container{
+    padding: 5px 0 0 50px;
+}
+.numb{
+   color:rgb(123, 123, 121);
+   padding-left:5px;
+}
+img{
+    width: 100%;
+}
+td{
+    padding-left:10px;
+}
+.menu-list{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left:10px;
+}
+/* .logo{
+    width: 25px;
+} */
